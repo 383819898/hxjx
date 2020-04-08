@@ -38,7 +38,7 @@
     <jsoup.version>1.11.3</jsoup.version>
 
    <!-- 权限控制-->
-    <shiro.version>1.4.0</shiro.version>
+    <shiro.version>1.5.2</shiro.version>
 
 
   </properties>
