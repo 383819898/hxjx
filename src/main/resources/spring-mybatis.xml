@@ -87,6 +87,7 @@
         <property name="filterChainDefinitions">
             <value>
                 <!-- 登录页允许访问 -->
+                /html/** = anon
                 /login/login** = anon
                 /demo/** = anon
                 /doLogin/** = anon
