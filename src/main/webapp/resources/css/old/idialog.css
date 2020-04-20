@@ -26,7 +26,7 @@ table.ui_border,table.ui_dialog{ width:auto;border-spacing:0;*border-collapse:co
 .ui_content{ display:inline-block;*display:inline;zoom:1;text-align:left; }
 .ui_content.ui_state_full{ display:block;width:100%;height:100%;margin:0;padding:0!important; }
 .ui_content.ui_state_full iframe{ border-radius:0 0 5px 5px; }
-.ui_loading{ width:96px;height:32px;text-align:left;text-indent:-9999em;overflow:hidden;background:url(icons/loading.gif) no-repeat center center; }
+.ui_loading{ width:96px;height:32px;text-align:left;text-indent:-9999em;overflow:hidden;background:url(/resources/images/icons/loading.gif) no-repeat center center; }
 .ui_icon_bg{ margin:20px 0 20px 15px; }
 
 /*标题纯CSS按钮开始 min 最小化，max最大化，res还原，rese恢复，close关闭*/
@@ -49,15 +49,15 @@ table.ui_border,table.ui_dialog{ width:auto;border-spacing:0;*border-collapse:co
 .ui_title_bar{ width:100%;position:relative; }
 .ui_title{ display:block;height:26px;line-height:26px;border-bottom:1px solid #DDD\9;font-size:14px;font-weight:bold;color:#888;background:#FFF;background:none;padding-left:3px; }
 .ui_state_focus .ui_title{ color:#505050; }
-.ui_lt,.ui_rt,.ui_lb,.ui_rb,.ui_t,.ui_b,.ui_close { background-image:url(idialog/idialog_s.png);background-repeat:no-repeat; }
+.ui_lt,.ui_rt,.ui_lb,.ui_rb,.ui_t,.ui_b,.ui_close { background-image:url(/resources/images/idialog/idialog_s.png);background-repeat:no-repeat; }
 .ui_lt{ width:15px;height:15px;background-position:0 0;_png:idialog/ie6/ui_lt.png; }
 .ui_rt{ width:15px;height:15px;background-position:-15px 0;_png:idialog/ie6/ui_rt.png; }
 .ui_lb{ width:15px;height:15px;background-position:0 -15px; _png:idialog/ie6/ui_lb.png; }
-.ui_rb{ width:15px;height:15px;background-position:-15px -15px;_png:idialog/ie6/ui_rb.png; }
+.ui_rb{ width:15px;height:15px;background-position:-15px -15px;_png:/resources/images/idialog/ie6/ui_rb.png; }
 .ui_t,.ui_b{ background-repeat:repeat-x; }
 .ui_t{ background-position:0 -30px;_png:idialog/ie6/ui_t.png; }
 .ui_b{ background-position:0 -45px;_png:idialog/ie6/ui_b.png; }
-.ui_l,.ui_r{ background-image:url(idialog/idialog_s2.png);background-repeat:repeat-y; }
+.ui_l,.ui_r{ background-image:url(/resources/images/idialog/idialog_s2.png);background-repeat:repeat-y; }
 .ui_l{ background-position:left top;_png:idialog/ie6/ui_l.png; }
 .ui_r{ background-position:right bottom;_png:idialog/ie6/ui_r.png; }
 
@@ -80,7 +80,7 @@ table.ui_border,table.ui_dialog{ width:auto;border-spacing:0;*border-collapse:co
 @media screen and (min-width:0){/* css3 */
 	.ui_lt, .ui_rt, .ui_lb, .ui_rb{ width:5px; height:5px; }
 	.ui_lt, .ui_t, .ui_rt, .ui_l, .ui_r, .ui_lb, .ui_b, .ui_rb { background:none;}
-	.ui_lb, .ui_b, .ui_rb { background:url(idialog/idialog_s.png) repeat-x 0 -45px; }
+	.ui_lb, .ui_b, .ui_rb { background:url(/resources/images/idialog/idialog_s.png) repeat-x 0 -45px; }
 	.ui_lb { border-radius:0 0 0 5px; }
 	.ui_rb { border-radius:0 0 5px 0; }
 	.ui_border {border-radius:5px; background:#FFF;  border:1px solid #929292; border-radius:5px; box-shadow:0 1px 6px rgba(0, 0, 0, .3); -moz-transition:-moz-box-shadow linear .2s; -webkit-transition: -webkit-box-shadow linear .2s; transition: -webkit-box-shadow linear .2s; }

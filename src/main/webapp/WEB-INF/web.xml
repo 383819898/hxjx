@@ -80,7 +80,17 @@
     <session-timeout>15</session-timeout>
   </session-config>
 
+<!--
+  <servlet>
+    <servlet-name>runtain</servlet-name>
+    <jsp-file>/WEB-INF/index.jsp</jsp-file>
+  </servlet>
 
+  <servlet-mapping>
+    <servlet-name>runtain</servlet-name>
+    <url-pattern>/html</url-pattern>
+  </servlet-mapping>
+-->
 
 
 </web-app>

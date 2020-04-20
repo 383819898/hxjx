@@ -16,8 +16,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>13</maven.compiler.source>
-    <maven.compiler.target>13</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <argLine>-Dfile.encoding=UTF-8</argLine>
 
     <!-- spring版本号 -->
@@ -27,7 +27,7 @@
     <mybatis.version>3.5.3</mybatis.version>
 
     <!-- mysql驱动版本号 -->
-    <mysql-driver.version>8.0.13</mysql-driver.version>
+    <mysql-driver.version>8.0.19</mysql-driver.version>
 
     <!-- log4j日志包版本号 -->
     <slf4j.version>1.7.30</slf4j.version>
@@ -78,9 +78,21 @@
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
-      <version>8.0</version>
+      <version>8.0.1</version>
       <scope>provided</scope>
     </dependency>
+
+      <dependency>
+          <groupId>javax.validation</groupId>
+          <artifactId>validation-api</artifactId>
+          <version>1.1.0.Final</version>
+      </dependency>
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-validator</artifactId>
+          <version>5.2.4.Final</version>
+      </dependency>
+
 
 
     <!-- 添加junit4依赖 -->
@@ -340,8 +352,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>13</source>
-                    <target>13</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 

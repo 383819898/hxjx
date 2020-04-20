@@ -3,6 +3,8 @@ package com.guoguo.shiro;
 
 import javax.annotation.Resource;
 
+import com.guoguo.Mapper.UserDetailsDAO;
+import com.guoguo.entity.UserDetails;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
@@ -29,8 +31,9 @@ public class ShiroAuthorizingRealm extends AuthorizingRealm {
 
 
 
-/*    @Resource
-    private UserService userService;*//*
+    @Resource
+    private UserDetailsDAO userDetailsDAO;
+/*
 
 
 */
@@ -53,7 +56,7 @@ public class ShiroAuthorizingRealm extends AuthorizingRealm {
         SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
         String username = String.valueOf(principals.getPrimaryPrincipal());
         logger.info("权限检查----" + username + "-----------------");
-/*         User param = new User();
+     /*    User param = new UserDetails();
        param.setUserName(username);
         final User user = userService.getSigle(param);
         if (user != null) {
@@ -80,18 +83,13 @@ public class ShiroAuthorizingRealm extends AuthorizingRealm {
         return authorizationInfo;
     }
 
-    @Override
-    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
-        return null;
-    }
-
 
 /**
      * 登录验证
      *//*
 
  */
-/*   @Override
+   @Override
     protected AuthenticationInfo doGetAuthenticationInfo(
             AuthenticationToken token) throws AuthenticationException {
         logger.info("登录验证");
@@ -102,8 +100,8 @@ public class ShiroAuthorizingRealm extends AuthorizingRealm {
         // 通过数据库进行验证
 
         try {
-            User user = new User(username, password);
-            final User authenticatedUser = userService.login(user);
+            UserDetails user = new UserDetails(username, password);
+            final UserDetails authenticatedUser = userDetailsDAO.login(user);
             if (authenticatedUser == null) {
                 throw new AuthenticationException("用户名或密码错误.");
             } else {
@@ -120,7 +118,6 @@ public class ShiroAuthorizingRealm extends AuthorizingRealm {
 
         return authenticationInfo;
     }
-*/
 
 
 

@@ -61,7 +61,7 @@
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.guoguo.dao"/>
+        <property name="basePackage" value="com.guoguo.Mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
@@ -81,13 +81,13 @@
 
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager" />
-        <property name="loginUrl" value="/index.jsp" />
+        <property name="loginUrl" value="/index1.jsp" />
         <property name="successUrl" value="/user/index.html" />
         <property name="unauthorizedUrl" value="/401.html" />
         <property name="filterChainDefinitions">
             <value>
                 <!-- 登录页允许访问 -->
-                /html/** = anon
+                /home/** = anon
                 /login/login** = anon
                 /demo/** = anon
                 /doLogin/** = anon
@@ -96,6 +96,7 @@
                 /page/** = anon
                 <!-- 静态资源允许访问 -->
                 /static/** = anon
+                /resources/** = anon
                 /assets/** = anon
 
                 /user = authc
