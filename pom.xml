@@ -35,7 +35,7 @@
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <jackson.version>2.10.1</jackson.version>
     <logback.version>1.2.3</logback.version>
-    <jsoup.version>1.11.3</jsoup.version>
+    <jsoup.version>1.14.2</jsoup.version>
 
    <!-- 权限控制-->
     <shiro.version>1.4.0</shiro.version>
